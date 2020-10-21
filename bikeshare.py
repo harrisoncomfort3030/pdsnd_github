@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-#these are the 3 CSV files that we are pulling from to conduct the analysis
+#these are the 3 CSV files that we are pulling from to conduct the analysis. PLEASE NOTE THAT THE PATHS WILL NEED TO BE UPDATED.
 CITY_DATA = { 'chicago': '/Users/harrison.comfort/python/chicago.csv',
               'new york city': '/Users/harrison.comfort/python/new_york_city.csv',
               'washington': '/Users/harrison.comfort/python/washington.csv'}
