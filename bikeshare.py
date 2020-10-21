@@ -179,7 +179,7 @@ def trip_duration_stats(df):
 
 
     total_travel_time = df['Trip Duration'].sum()
-    print ("The total travel time for this city in this period is: {} hours".format(total_travel_time/360))
+    print ("The total travel time for this city in this period is: {} days".format(total_travel_time/1440))
 
     # display mean travel time... it returns in seconds which is not heplful for analysis, so I converted it to minutes.
 
@@ -246,6 +246,8 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+#this was my aha moment, when i added this and realized it needed to go into main in order for it to run in the program
 
 def display_data(df):
     lines = 0
