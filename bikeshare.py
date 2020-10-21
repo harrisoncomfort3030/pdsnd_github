@@ -78,7 +78,7 @@ def load_data(city, month, day):
     #convert start time from a string to datetime for purposes of analysis
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-    #create month and day columns in our dataframe
+    #create month and day columns in our dataframe... YOU MIGHT NEED TO SWITCH TO WEEKDAY_NAME !!!!
 
     df['month'] = df['Start Time'].dt.month
     df['day'] = df['Start Time'].dt.day_name()
